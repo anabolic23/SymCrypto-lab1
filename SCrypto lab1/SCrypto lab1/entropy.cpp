@@ -91,10 +91,6 @@ void Tools::ProcessTextFile() {
         std::wstring processedLine = ProcessLine(line);
         std::wcout << processedLine;
         outputFile << processedLine; 
-        if (!(outputFile << processedLine)) {
-            std::cerr << "Error writing to the output file\n";
-            // Handle the error as needed
-        }
     }
     inputFile.close();
     outputFile.close(); // Close the output file when done

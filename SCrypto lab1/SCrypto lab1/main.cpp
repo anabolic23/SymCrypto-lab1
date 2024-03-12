@@ -7,7 +7,7 @@ int main() {
     SetConsoleOutputCP(1251);
     setlocale(LC_ALL, "");
 
-    Tools tool(true); 
+    Tools tool(false); 
     tool.OpenFile("../input.txt");
     
     tool.ProcessTextFile();
