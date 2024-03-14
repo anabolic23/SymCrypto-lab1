@@ -89,7 +89,7 @@ void Tools::ProcessTextFile() {
     std::wstring line;
     while (std::getline(inputFile, line)) {
         std::wstring processedLine = ProcessLine(line);
-        std::wcout << processedLine;
+        //std::wcout << processedLine;
         outputFile << processedLine; 
     }
     inputFile.close();

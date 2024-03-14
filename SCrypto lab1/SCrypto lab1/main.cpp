@@ -7,7 +7,7 @@ int main() {
     SetConsoleOutputCP(1251);
     setlocale(LC_ALL, "");
 
-    Tools tool(false); 
+    Tools tool(true); 
     tool.OpenFile("../input.txt");
     
     tool.ProcessTextFile();
@@ -28,7 +28,7 @@ int main() {
     double entropy1 = tool.CalculateEntropyH1();
     std::wcout << L"\nEntropy: " << entropy1 << L"\n";
 
-    tool.CountBigrams(1); 
+    tool.CountBigrams(2); 
     tool.CalculateBigramsProbabilities();
 
     std::wcout << L"\nBigram Frequencies:\n";
